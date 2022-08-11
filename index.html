@@ -25,27 +25,43 @@
         padding: 20px;
         margin: 0;
       }
-      ol {
+      #grid ol {
         /*블록레벨엘리먼트*/
-        border-right: 7px solid gray;
         width: 80px;
         margin: 0;
-        margin-left: 30px;
+        margin-left: 40px;
+        margin-top: 10px;
         padding: 0px;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #main {
+        border-left: 7px solid gray;
+        padding-left: 20px;
       }
     </style>
     <h1><a href="index.html" style="color: #5abef5">Wish List</a></h1>
   </head>
 
   <body>
-    <ol>
-      <li><a href="Speakers.html">Speakers</a></li>
-      <li><a href="Monitor.html">Monitor</a></li>
-      <li><a href="ETC.html">ETC</a></li>
-    </ol>
-    <p>
-      <img src="welcome.jpg" width="30%" />
-    </p>
+    <div id="grid">
+      <div>
+        <ol>
+          <li><a href="Speakers.html">Speakers</a></li>
+          <li><a href="Monitor.html">Monitor</a></li>
+          <li><a href="ETC.html">ETC</a></li>
+          <br /><br /><br /><br /><br /><br />
+        </ol>
+      </div>
+      <div id="main">
+        <p>
+          <img src="welcome.jpg" width="30%" />
+        </p>
+      </div>
+    </div>
+
     <br /><br /><br /><br /><br />
   </body>
 

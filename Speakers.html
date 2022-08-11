@@ -25,51 +25,68 @@
         padding: 20px;
         margin: 0;
       }
-      ol {
+      #grid ol {
         /*블록레벨엘리먼트*/
-        border-right: 7px solid gray;
         width: 80px;
         margin: 0;
-        margin-left: 30px;
+        margin-left: 40px;
+        margin-top: 10px;
         padding: 0px;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #main {
+        border-left: 7px solid gray;
+        padding-left: 20px;
       }
     </style>
     <h1><a href="index.html" style="color: #5abef5">Wish List</a></h1>
   </head>
 
   <body>
-    <ol>
-      <li><a href="Speakers.html" style="color: brown">Speakers</a></li>
-      <li><a href="Monitor.html">Monitor</a></li>
-      <li><a href="ETC.html">ETC</a></li>
-    </ol>
-    <h2>Speakers</h2>
-    <p>
-      <iframe
-        width="400"
-        height="200"
-        src="https://www.youtube.com/embed/jUsFhRj6mzc"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; 
+    <div id="grid">
+      <div>
+        <ol>
+          <li><a href="Speakers.html">Speakers</a></li>
+          <li><a href="Monitor.html">Monitor</a></li>
+          <li><a href="ETC.html">ETC</a></li>
+          <br /><br /><br /><br /><br /><br />
+        </ol>
+      </div>
+      <div id="main">
+        <h2>Speakers</h2>
+        <p>
+          <iframe
+            width="400"
+            height="200"
+            src="https://www.youtube.com/embed/jUsFhRj6mzc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; 
     encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        >>
-      </iframe>
-    </p>
-    <strong>구매 완료 - <u>Edifier MR4</u> / 네이버 쇼핑</strong> <br />
-    - 71,000이하 / 배송 리뷰 확인 / 돼지코 주는데도 있으니 확인<br />
-    이걸 보시고 EQAPO를 설치하시고
-    <u
-      ><strong
-        ><a
-          target="_blank"
-          href="https://gall.dcinside.com/mgallery/board/view?id=speakers&no=46148"
-          title="필터값을 볼 수 있는 링크입니다"
-          >필터 값들</a
-        ></strong
-      ></u
-    >을 그대로 복붙해서 넣으시면 자동 적용됩니다<br />
+            allowfullscreen
+            >>
+          </iframe>
+        </p>
+        <strong>구매 완료 - <u>Edifier MR4</u> / 네이버 쇼핑</strong> <br />
+        - 71,000이하 / 배송 리뷰 확인 / 돼지코 주는데도 있으니 확인<br />
+        이걸 보시고 EQAPO를 설치하시고
+        <u
+          ><strong
+            ><a
+              target="_blank"
+              href="https://gall.dcinside.com/mgallery/board/view?id=speakers&no=46148"
+              title="필터값을 볼 수 있는 링크입니다"
+              >필터 값들</a
+            ></strong
+          ></u
+        >을 그대로 복붙해서 넣으시면 자동 적용됩니다<br />
+        <br /><br /><br /><br /><br />
+      </div>
+    </div>
+
     <br /><br /><br /><br /><br />
   </body>
 
