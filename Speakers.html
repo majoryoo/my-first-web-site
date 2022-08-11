@@ -1,22 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WEB1 - html</title>
+    <title>MY Wish LIST</title>
     <meta charset="utf-8" />
+    <style>
+      body{
+        margin: 0;
+      }
+      img{
+        display: block; margin: 0px auto;
+      }
+      a {
+        color:black;
+        text-decoration:wavy;
+      }
+      h1 {/*블록레벨엘리먼트*/
+        font-family: verdana;
+        font-size: 40px;
+        text-align: center;
+        border-bottom: 10px solid gray;
+        border-top: 10px solid gray; 
+        padding: 20px;
+      }
+      ol{ /*블록레벨엘리먼트*/
+        border-right: 10px solid gray;
+        width: 80px;
+        margin: 10px;
+        padding: 15px;
+      }
+    </style>
+    
   </head>
 
   <body>
-    <h1><a href="index.html">Wish List ----</a></h1>
-  </body>
-</html>
-
-<ol>
-  <li><a href="Speakers.html">Speakers</a></li>
-  <li><a href="Monitor.html">Monitor</a></li>
-  <li><a href="ETC.html">ETC</a></li>
-</ol>
-
-<h2>Speakers</h2>
+        <h1><a href="index.html">Wish List</a></h1>
+        
+        <ol>
+          <li><a href="Speakers.html"style="color:brown">Speakers</a></li>
+          <li><a href="Monitor.html">Monitor</a></li>
+          <li><a href="ETC.html">ETC</a></li>
+        </ol>
+        <h2>Speakers</h2>
 <p>
   <iframe
     width="400"
@@ -43,6 +67,9 @@
     ></strong
   ></u
 >을 그대로 복붙해서 넣으시면 자동 적용됩니다<br />
+        <br><br><br><br><br>
+  </body>
+  
 <p>
   <div id="disqus_thread"></div>
 <script>
@@ -64,3 +91,4 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </p>
+</html>
