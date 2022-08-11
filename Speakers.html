@@ -2,6 +2,22 @@
 <html>
   <head>
     <title>MY Wish LIST</title>
+    <input
+      type="button"
+      value="night"
+      onclick="
+      document.querySelector('body').style.backgroundColor='black';
+      document.querySelector('body').style.color='white';
+    "
+    />
+    <input
+      type="button"
+      value="day"
+      onclick="
+      document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.color='black';
+    "
+    />
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
     <h1><a href="index.html" style="color: #5abef5">Wish List</a></h1>
@@ -11,8 +27,12 @@
     <div id="grid">
       <div>
         <ol>
-          <li><a href="Speakers.html">Speakers</a></li>
-          <li><a href="Monitor.html">Monitor</a></li>
+          <li>
+            <del><a href="Speakers.html">Speakers</a></del>
+          </li>
+          <li>
+            <strong><a href="Monitor.html">Monitor</a></strong>
+          </li>
           <li><a href="ETC.html">ETC</a></li>
           <br />
         </ol>
@@ -34,7 +54,7 @@
         </p>
         <strong>구매 완료 - <u>Edifier MR4</u> / 네이버 쇼핑</strong> <br />
         - 71,000이하 / 배송 리뷰 확인 / 돼지코 주는데도 있으니 확인<br />
-        이걸 보시고 EQAPO를 설치하시고
+        EQAPO를 설치하시고
         <u
           ><strong
             ><a
