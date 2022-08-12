@@ -3,21 +3,21 @@
   <head>
     <title>MY Wish LIST</title>
     <input
-      id="night_day"
-      type="button"
-      value="night"
-      onclick="
-      if(document.querySelector('#night_day').value === 'night'){
-        document.querySelector('body').style.backgroundColor='black';
-        document.querySelector('body').style.color='white';
-        document.querySelector('#night_day').value = 'day'
+    type="button"
+    value="night"
+    onclick="
+      var target = document.querySelector('body');
+      if(this.value === 'night'){
+        target.style.backgroundColor='black';
+        target.style.color='white';
+        this.value = 'day'
       }else{
-        document.querySelector('body').style.backgroundColor='white';
-        document.querySelector('body').style.color='black';
-        document.querySelector('#night_day').value = 'night'
+        target.style.backgroundColor='white';
+        target.style.color='black';
+        this.value = 'night'
       }
     "
-    />
+  />
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
     <h1><a href="index.html" style="color: #5abef5">Wish List</a></h1>
@@ -93,4 +93,20 @@
       >comments powered by Disqus.</a
     ></noscript
   >
+  <input
+    type="button"
+    value="night"
+    onclick="
+      var target = document.querySelector('body');
+      if(this.value === 'night'){
+        target.style.backgroundColor='black';
+        target.style.color='white';
+        this.value = 'day'
+      }else{
+        target.style.backgroundColor='white';
+        target.style.color='black';
+        this.value = 'night'
+      }
+    "
+  /> 
 </html>
