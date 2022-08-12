@@ -3,19 +3,19 @@
   <head>
     <title>MY Wish LIST</title>
     <input
+      id="night_day"
       type="button"
       value="night"
       onclick="
-      document.querySelector('body').style.backgroundColor='black';
-      document.querySelector('body').style.color='white';
-    "
-    />
-    <input
-      type="button"
-      value="day"
-      onclick="
-      document.querySelector('body').style.backgroundColor='white';
-      document.querySelector('body').style.color='black';
+      if(document.querySelector('#night_day').value === 'night'){
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';
+        document.querySelector('#night_day').value = 'day'
+      }else{
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        document.querySelector('#night_day').value = 'night'
+      }
     "
     />
     <meta charset="utf-8" />
@@ -51,7 +51,7 @@
           ></iframe>
         <p style="margin-top: 40">
           - 아래 32인치 제품이 위시. <br><br>
-          - 아무리 생각해도 책상 바꾸기 전엔 각이 안나오긴 한데,, 지금 책상 비싼건데 버릴 수도 없고.. 휴.. 
+          - 아무리 생각해도 책상 바꾸기 전엔 각이 안나오긴 한데,, 지금 책상 오래썼지만 멀쩡한데 버릴 수도 없고.. 휴.. 
           <br><br>모니터 {브라켓/암 -
           고민중} 브라켓은 한번 구멍 뚫으면 책상위치 변경시 굉장히 애매해짐<br />
           32인치까지 확인 /  무게, 하중 체크 해보기
