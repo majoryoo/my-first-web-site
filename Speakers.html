@@ -2,20 +2,39 @@
 <html>
   <head>
     <title>MY Wish LIST</title>
+    <script>
+      function nightDayHandler(self) {
+        var target = document.querySelector("body");
+        if (self.value === "night") {
+          target.style.backgroundColor = "black";
+          target.style.color = "white";
+          self.value = "day";
+
+          var alist = document.querySelectorAll("a");
+          var i = 0;
+          while (i < alist.length) {
+            alist[i].style.color = "powderblue";
+            i += 1;
+          }
+        } else {
+          target.style.backgroundColor = "white";
+          target.style.color = "black";
+          self.value = "night";
+
+          var alist = document.querySelectorAll("a");
+          var i = 0;
+          while (i < alist.length) {
+            alist[i].style.color = "black";
+            i += 1;
+          }
+        }
+      }
+    </script>
     <input
       type="button"
       value="night"
       onclick="
-      var target = document.querySelector('body');
-      if(this.value === 'night'){
-        target.style.backgroundColor='black';
-        target.style.color='white';
-        this.value = 'day'
-      }else{
-        target.style.backgroundColor='white';
-        target.style.color='black';
-        this.value = 'night'
-      }
+      nightDayHandler(this)
     "
     />
     <meta charset="utf-8" />
@@ -106,16 +125,7 @@
     type="button"
     value="night"
     onclick="
-      var target = document.querySelector('body');
-      if(this.value === 'night'){
-        target.style.backgroundColor='black';
-        target.style.color='white';
-        this.value = 'day'
-      }else{
-        target.style.backgroundColor='white';
-        target.style.color='black';
-        this.value = 'night'
-      }
+      nightDayHandler(this)
     "
   />
 </html>
